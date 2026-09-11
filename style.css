@@ -1,0 +1,1173 @@
+/* ==========================================================================
+   RESET & CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+  font-family: "Raleway", "Nunito Sans", sans-serif;
+  background-color: var(--bg-body);
+  color: var(--color-text-body);
+   
+}
+
+/* ======================== DECLARAÇÃO DE VARIÁVEIS =====================
+========================================================================*/
+:root{
+
+  /* Fontes */
+  --font-family-principal: "Raleway", sans-serif;
+  --font-family-text-body: "Nunito Sans", sans-serif;
+
+ /* Tamanhos de Fonte*/
+  --fs-h1: 2rem;       /* 32px */
+  --fs-h2: 1.5rem;     /* 24px */
+  --fs-h3: 1.06rem;    /* 17px */
+  --fs-body: 1.06rem;  /* 17px */
+  --fs-button: 0.875rem; /* 14px */
+  --fs-menu: 1rem;     /* 16px */
+
+  --font-weight-text-h1: 700;
+  --font-weight-text-h2: 700;
+  --font-weight-text-banner: 500;
+  --font-weight-text-body: 400;
+  --font-weight-button: 600;
+  --font-weight-menu: 600;
+
+    /* Cores de Texto */
+    --cor-principal-title:#FFFFFF;
+    --cor-text-h2: #8EE7D9;
+    --cor-text-h2-solutions: #205B52;
+    --cor-text-h3: #205B52;
+    --cor-text-p-solutions: #4a4a4a;
+    --cor-text-p-item-solutions: #555;
+    --cor-text-banner: #ffffff;
+    --cor-text-body: #e0e0e0;
+    --cor-text-button: #ffffff;
+    --cor-text-menu: #ffffff;
+    --cor-text-destaque-h1: #5cbbac;
+    --cor-text-destaque-card-planos: #777777;
+
+    /* Cores de Fundo */
+    --bg-body: #3E4143; 
+    --bg-button: #205b52;
+    --bg-header: #101417; 
+    --bg-footer: #205B52; 
+    --bg-solutions: #E5E5E5;
+    --bg-solutions-item: #F3F3F3; 
+    --bg-modal: rgba(0,0,0,0.6); 
+    --bg-modal-content: #ffffff; 
+   
+   /* Efeitos e Estados */
+
+    --bg-border-btn-hover: #3f897e; 
+    --border-btn: 1px solid #5cbbac; 
+    --radius-btn-card: 10px; 
+    --action-color: #5cbbac;
+}
+
+/* ======================== ID MENU =======================================
+========================================================================*/
+#inicio, #quem-somos, #modulos, #planos, #faleconosco{
+  scroll-margin-top: 80px;
+}
+
+section{
+  padding-bottom: 40px;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   ELEMENTOS GLOBAIS & TIPOGRAFIA
+   ========================================================================== */
+
+  .container{
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+h1{
+    font-size: var(--fs-h1);
+    font-weight: var(--font-weight-text-h1);
+    color: var(--cor-principal-title);
+}
+
+h2{
+
+  font-size: var(--fs-h2);
+  font-weight: var(--font-weight-text-h2);
+  color: var(--cor-text-h2);  
+}
+
+h3{
+    font-size: var(--fs-h3);
+}
+
+strong{
+    color: var(--cor-text-destaque-h1);
+}
+
+p{
+  margin-top: 24px;  
+  font-size: var(--fs-body);
+  font-weight: var(--font-weight-text-body);
+  font-family: var(--font-family-text-body);
+  color: var(--cor-text-body);   
+}
+
+/* ==========================================================================
+   BOTÕES (REDUZIDO E UNIFICADO)
+   ========================================================================== */
+.btn{
+  display: inline-block;
+  color: var(--cor-text-button);
+  font-size: var(--fs-button);
+  font-weight: var(--font-weight-button);
+  background-color: var(--bg-button);
+  border-radius: var(--radius-btn-card);
+  padding: 14px 18px; 
+  transition: background-color 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+.btn:hover{
+  background-color: var(--bg-border-btn-hover);  
+} 
+
+.btn-banner-contato{
+  
+  background-color: transparent;
+  color: #5cbbac;
+  border: var(--border-btn);
+}
+
+.btn-banner-contato:hover{
+
+  background-color: var(--bg-border-btn-hover);
+  border-color: var(--bg-border-btn-hover);
+  color: #FFFFFF;
+}
+
+.btn-planos-contato{
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: solid 1px #FFFFFF;
+  color: #FFFFFF;
+  padding: 14px 35px;
+  background-color: transparent;
+  transition: all 0.3s ease; /* Faz a inversão de cores ser suave */
+}
+
+.btn-planos-contato:hover{
+  background-color: #5cbbac;
+  border-color: #5cbbac; /* Cor da borda que vai aparecer */
+  color: #ffffff; /* Mantém o texto totalmente branco */
+}
+
+/* ==========================================================================
+  HEADER & MENU
+  ========================================================================== */
+
+.header{
+  background-color: var(--bg-header);
+  position: sticky; /*Fixar o elemento no topo durante o scroll*/
+  top: 0; /*Para informar em qual posição ele deve "grudar" na rolagem da página.*/
+  z-index: 1000; /* Garante que o header fique acima de outros elementos */
+
+  background: rgba(10, 15, 14, 0.4); 
+    
+    /* Efeito de desfoque igual ao do seu banner */
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.header .container{
+  height: 80px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu{
+  display: flex;
+  gap: 30px;
+}
+
+.menu a{
+  color: var(--cor-text-menu);
+  font-weight: var(--font-weight-menu);
+}
+
+.menu a:hover{
+  color: var(--action-color);
+}
+
+.menu a.active{
+  color: #66c3b5;
+  border-bottom: 2px solid #66c3b5;
+}
+
+/* ==========================================================================
+  BANNER
+  ========================================================================== */
+
+.banner{
+  height: 519px;
+  background-image: url(img/Banner.svg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+    
+}
+
+.banner p{
+  color: var(--cor-text-banner);
+  font-weight: var(--font-weight-text-banner);
+}
+
+.box-banner{
+  padding: 20px 30px;           /* cria respiro interno */
+  width: fit-content;
+  background: rgba(0, 0, 0, 0.10); /* película escura */
+  /* background: rgba(255, 255, 255, 0.15); */
+  backdrop-filter: blur(6px);      /* efeito vidro */
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 15px; 
+}
+
+.conteudo{
+  padding-top: 100px;
+}
+
+.botoes-banner{
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+/* ==========================================================================
+  QUEM SOMOS (APRESENTAÇÃO)
+  ========================================================================== */
+
+.apresentacao{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; 
+  gap: 3rem;                 /* espaçamento entre vídeo e texto */
+  padding: 3rem 2rem;
+}
+
+.video-apresentacao{
+  flex: 0 0 48%;             /* largura do bloco do vídeo (ajuste à vontade: 45–55%) */
+  margin-top: 4.0rem;
+    
+}
+
+.video-apresentacao video{
+  
+  width: 100%;               /* vídeo encosta na borda do bloco */
+  height: 100%;
+  object-fit: cover;
+}
+
+.conteudo-apresentacao h2{
+
+  margin-bottom: 16px;
+    
+}
+
+.conteudo-apresentacao p{  
+     
+  margin-bottom: 24px;          
+  line-height: 1.4;
+  letter-spacing: 0.3px;     /* dá mais respiro entre as letras */
+  max-width: 600px;          /* evita linhas muito longas */
+}
+
+.conteudo-apresentacao p strong{
+   
+  color: #FFFFFF;
+    
+}
+
+/* ==========================================================================
+  MÓDULOS (SOLUÇÕES)
+  ========================================================================== */
+
+.modulos{
+    
+  padding: 60px 0;
+  background-color: var(--bg-solutions);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.modulos h2{ 
+  margin-bottom: 10px; 
+  color: var(--cor-text-h2-solutions); 
+}
+    
+.modulos .container > p {
+  
+ color: var(--cor-text-p-solutions);
+ line-height: 1.55;
+ margin: 0 auto 50px auto;
+ 
+}
+
+.modulos-grid {
+
+ display: grid;
+ grid-template-columns: repeat(4, 1fr); 
+ gap: 30px; 
+}
+    
+.modulos-item {
+    
+  background-color: var(--bg-solutions-item);
+  padding: 10px 20px;
+  border-radius: var(--radius-btn-card);
+  text-decoration: none; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+       
+}
+
+.modulos-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1); 
+}
+    
+.modulos-item h3 {
+    
+  margin-bottom: 5px;
+  color: var(--cor-text-h3);    
+}
+
+.modulos-item p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 3px;
+  margin-bottom: 10px; 
+  line-height: 1.4;
+        
+}
+
+.modulos-item .icon {
+        
+ font-size: 32px;
+ display: block;
+ margin-bottom: 15px;
+   
+}
+
+/* ==========================================================================
+  MODAIS (POP-UPS)
+  ========================================================================== */
+
+.modal{
+            
+  display: none; 
+  position: fixed; 
+  z-index: 100; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-modal);
+  overflow: auto; 
+  padding-top: 50px;
+}
+
+.modal-content {
+            
+  background-color: var(--bg-modal-content);
+  margin: 5% auto; 
+  padding: 40px;
+  border-radius: 10px;
+  width: 80%; 
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.close-button {
+            
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+  
+.close-button:hover, .close-button:focus {
+            
+  color: #333;
+  /* text-decoration: none; */
+  cursor: pointer;
+}
+     
+.modal-content h2{ 
+    
+  color: var(--cor-text-h2);
+  margin-bottom: 15px; 
+  text-align: left; 
+       
+}
+  
+.modal-content p{ 
+    
+  color: var(--cor-text-p-item-solutions);
+  margin-bottom: 20px; 
+  text-align: left; 
+  min-height: auto !important; 
+}
+
+/* ==========================================================================
+  PLANOS & ACORDEÃO
+  ========================================================================== */
+
+.container.planos {
+  padding: 60px 0;
+}
+
+.conteudo-planos h2{
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 100;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.linha-travessa {
+  width: 100px; /* comprimento da linha */
+  height: 5px;  /* espessura */
+  margin: 25px auto 40px; /* espaço acima e abaixo, centralizada */
+  background: linear-gradient(to right, #205b52, #2d7a6e); /* gradiente igual ao accordion */
+  border-radius: 10px; /* extremidades arredondadas */    
+}
+
+.planos-grid{
+   
+  display: flex;
+  gap: 2rem;
+   
+}
+
+.layout-planos{
+  width: 48%;
+}
+
+
+.accordion-details {
+  width: 100%;
+  background: linear-gradient(to right, #205b52, #2d7a6e);
+  border-radius: 16px;
+  border: none;
+  margin-bottom: 10px; /* espaço entre cada accordion */ 
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px; /* Altere para 10px se quiser o espaço verde maior */
+}
+
+.accordion-details summary {
+  list-style: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Remove marcadores e setas padrões dos navegadores */
+.accordion-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.inner-border {
+    
+  display: flex;
+  justify-content: space-between; /*título/subtítulo à esquerda, seta à direita */
+  align-items: center;
+  border: 1px solid #2e6f66;
+  border-radius: 16px;
+  padding: 15px 20px;          /* espaço interno do texto */
+  margin: 5px ;                 /* cria distância da borda do botão */
+  /* width: calc(100% - 10px); /*100% menos as margens laterais*/
+  /*box-sizing: border-box;  */
+  
+}
+
+/* Adiciona dinamicamente um indicador visual (+) ou (-) nativo usando CSS */
+.inner-border::after {
+    content: '+';
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+/* Quando o details estiver aberto ([open]), muda o símbolo para menos (-) */
+.accordion-details[open] .inner-border::after {
+    content: '−';
+}
+
+/* Força o span .texto a empilhar os títulos verticalmente */
+.texto {
+  display: flex;
+  flex-direction: column; /* 👈 coloca um abaixo do outro */
+  align-items: flex-start; /* alinha à esquerda */
+  
+}
+
+.accordion-details .titulo{
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.3rem;
+    
+}
+
+.accordion-details .subtitulo{
+
+ color: #cfeeed;
+ font-size: .9rem;
+}
+
+.accordion-item-content{
+
+  width: calc(100% - 20px);
+  margin: auto; /* 👈 Alterado: 'auto' nas laterais centraliza o bloco */
+  color: #555;
+  padding: 20px 35px;
+  background: #F3F3F3;
+  border-radius: 16px;
+  font-size: 14px;
+  box-sizing: border-box; 
+  
+}
+
+.accordion-item-content p{
+
+  margin-top: 12px;
+  margin-bottom: 8px;
+  margin-left: 0;
+  font-weight: bold;
+  color: #2e6f66; 
+    
+}
+
+.intro-lista{
+  font-size: 16px;
+  font-weight: normal !important;
+  color: #555 !important;
+}
+
+.accordion-item ul{
+  padding-left: 20px;
+}
+
+.accordion-item ul li {
+  
+ line-height: 1.6;
+ }
+
+/*==========================================================================
+  RECURSOS ADICIONAIS (LADO DOS PLANOS)
+  ========================================================================== */
+
+ .recursos-adicionais{
+  flex: 1;   
+}
+
+ .info-content{
+  height: 100%;
+  border-radius: 16px;
+  padding: 15px 40px;
+  border-top: 2px solid #2e6f66;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06), 0 20px 40px rgba(0,0,0,0.12);
+  line-height: 1.8;
+ }
+
+ .info-content ul{
+  padding-left: 20px;
+}
+
+.info-content ul li {
+  
+ line-height: 1.6;
+ font-size: 0.9em;
+ color: #e0e0e0;
+ margin-bottom: 20px;
+ }
+
+ .info-content ul li .dest{
+    
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2em;
+
+ }
+
+ .info-content p{
+  margin-bottom: 15px;
+ }
+
+ .info-content .dif{
+  font-size: 12px;
+ }
+
+.contato{
+    
+  text-align: center;
+  margin-top: 40px;
+}
+  
+/* ==========================================================================
+  SEÇÃO RESULTADOS & CONTADORES
+  ========================================================================== */
+
+ .numeros-gem {
+  padding: 60px 20px;
+  background: #E5E5E5;
+}
+
+.titulo-numeros {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--cor-text-h2-solutions);
+}
+
+.resultados-numericos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px; /* espaço entre os números */
+  flex-wrap: wrap; /* quebra no mobile */
+  border-radius: 16px;
+  background: #F3F3F3;
+
+  /* efeito 3D suave */
+  box-shadow: 
+  0 10px 25px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+
+}
+
+.numero-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+} 
+
+.linha-numero {
+  display: flex;
+  flex-direction: row; /* ✅ horizontal */
+  align-items: center;
+  justify-content: center; /* centraliza dentro da div */
+  
+}
+
+.mais {
+  color: #1fa67a; /* cor do + */
+  margin-right: 4px;
+  font-size: 50px;
+  font-weight: 400; 
+}
+
+.contador {
+  color: #3f897e;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5; /* 🔥 ESSENCIAL */
+  display: inline-block; /* evita distorção */
+  font-variant-numeric: tabular-nums lining-nums;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  will-change: contents;
+}
+
+.sufixo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #3f897e;
+  margin-left: 4px;
+}
+
+/***********************ESTILIZAÇÃO DO P DO NUMERO-ITEM ********************/
+.numero-item p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.2;
+  margin: 0;
+
+}
+
+/* ==========================================================================
+  SEÇÃO FAQ
+========================================================================== */
+
+#faq {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#faq h2 {
+  margin-bottom: 20px;
+}
+
+#faq .linha-faq {
+  width: 50px;
+  height: 2px;
+  margin: 5px auto 40px;
+  background: var(--cor-text-h2);
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  row-gap: 40px;
+  max-width: 1000px;     /* 🔥 controla largura total do grid */
+  margin: 0 auto;       /* 🔥 centraliza em relação ao H2 */ 
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 100%;      /* 🔥 remove limitação anterior */
+  text-align: left;     /* 🔥 garante alinhamento interno */
+  
+}
+
+.faq-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+.faq-item:hover h3{
+  color: var(--action-color);
+  transition: 0.2s;
+}
+
+.faq-item p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.faq-text {
+  overflow: hidden;
+}
+
+/* ESTADO COLAPSADO */
+.faq-text.collapsed {
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* 🔥 controla nº de linhas */
+  -webkit-box-orient: vertical;
+  line-clamp: 1; /* 🔥 padrão atual */
+  overflow: hidden;
+}
+
+.faq-text.collapsed p, .faq-text.collapsed li {
+  opacity: 0.3;
+  filter: grayscale(40%);
+  transition: 0.3s ease;
+}
+
+/* REMOVE O FADE ANTIGO (não precisa mais) */
+.faq-text.collapsed::after {
+  display: none;
+}
+
+.faq-item ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.faq-item ul li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+  color: var(--cor-text-body);
+  font-size: 14px;
+}
+
+.faq-toggle {
+  margin-top: 8px;
+  background: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  color: #5cbbac;
+}
+
+/* Botão Ver Mais */
+.faq-toggle:hover {
+  text-decoration: underline;
+  
+}
+
+.faq-item:hover .faq-text.collapsed :is(p, li) {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+/* ==========================================================================
+ FOOTER
+========================================================================== */
+.footer{
+    
+  background-color: var(--bg-footer);
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.footer-grid {
+
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  gap: 40px;
+  
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-col .empresa {
+  margin-top: 20px; /* aumenta espaço entre os dois blocos */
+}
+
+.footer h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer a{
+  color: var(--cor-text-body);
+  font-size: 14px;
+}
+
+.icon-social{
+  display: flex;
+  gap: 15px;
+}
+
+.termo {
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.termo p {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto; /* centraliza o conteúdo */
+  padding: 0 20px;
+}
+
+.termo a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.termo a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+/* Layout em duas colunas: Menu à esquerda e Tabela à direita */
+.planos-split-container { 
+  display: flex; 
+  gap: 30px; 
+  align-items: flex-start; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  margin-top: 20px; /* Reduzido para aproximar perfeitamente da linha travessa */
+}
+
+/* ========================================================================== 
+ MENU LATERAL ESQUERDO A TABELA
+ ========================================================================== */ 
+.pricing-nav-menu { 
+  width: 160px; 
+  display: flex; 
+  flex-direction: column;
+  gap: 12px; 
+  flex-shrink: 0; 
+  position: relative; /* Mantido fixo para a setinha funcionar */
+  /*margin-top: 0px !important;   /* O !important força o navegador a anular qualquer outra margem antiga */
+  /*padding-top: 0px !important;  /* Zera qualquer respiro interno antigo */
+  /*top: 0px !important;          Remove o empurrão de 100px que jogava ele para baixo*/
+}
+
+
+
+.nav-item { 
+  display: flex;               /* Transforma em flexbox para controlar o alinhamento interno */
+  align-items: center;         /* Centraliza o texto verticalmente caso tenha 1 ou 2 linhas */
+  justify-content: center;     /* Centraliza o texto horizontalmente */
+  width: 100%;                 /* Garante que todos usem a largura total disponível do menu (160px) */
+  height: 54px;                /* TRAVA A ALTURA: Força todos a terem exatamente o mesmo tamanho vertical */
+  padding: 0 10px;             /* Remove o padding vertical antigo e mantém apenas o respiro nas laterais */
+  background-color: #ffffff; 
+  color: #555555; 
+  text-align: center; 
+  border-radius: 8px; 
+  font-family: var(--font-family-principal); 
+  font-size: 14px;             /* Reduzido sutilmente de 16px para 14px para que "Gestão de Relatórios" caiba melhor em duas linhas sem quebrar */
+  line-height: 1.2;            /* Ajusta o espaçamento entre linhas para textos longos */
+  font-weight: 600; 
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+
+/* Estado Ativo/Hover do Menu Lateral */
+.nav-item:hover, 
+.nav-item.active {
+  background-color: #a2f1e1; /* Versão clara/suave do tom de destaque do GEM */
+  color: #205b52;
+  border-left: 4px solid var(--acƟon-color);
+}
+
+/* ========================================================================== 
+ CONTÊINER DA TABELA COM ROLAGEM VERTICAL E HORIZONTAL
+ ========================================================================== */ 
+.table-scroll-container {
+  flex: 1;
+  max-height: 516px; /* Define o limite vertical para ativar a barra de rolagem */
+  overflow-y: auto;  /* Ativa a rolagem vertical */
+  overflow-x: auto;  /* Garante compatibilidade caso a tela esmague horizontalmente */
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06), 0 20px 40px rgba(0,0,0,0.12);
+  scroll-behavior: smooth; /* Suaviza o movimento ao clicar no menu esquerdo */
+  
+}
+
+/* Estilização elegante para a Barra de Rolagem Direita (Webkit) */
+.table-scroll-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.table-scroll-container::-webkit-scrollbar-track {
+  background: #f8f9fa;;
+  border-radius: 0 16px 16px 0;
+}
+.table-scroll-container::-webkit-scrollbar-thumb {
+  background: #a2f1e1;;
+  border-radius: 10px;
+}
+.table-scroll-container::-webkit-scrollbar-thumb:hover {
+  background:  #79cbbe;;
+}
+
+/* ========================================================================== 
+ LINHAS DE CATEGORIAS INTERNAS DA TABELA
+ ========================================================================== */ 
+.category-header-row td {
+  background-color: #e2edea; /* Fundo sutil para separar as categorias */
+  color: #205b52;
+  font-family: var(--font-family-principal);
+  font-weight: 700;
+  font-size: 14px;
+  text-align: left;
+  padding: 12px 25px !important;
+  border-bottom: 2px solid #cedcd9;
+}
+
+/* Mantém o cabeçalho principal sempre fixo no topo durante a rolagem interna */
+.comparison-table th {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: linear-gradient(to right, #205b52, #2d7a6e);
+  color: #ffffff;
+  padding: 16px 10px;
+  border-bottom: 2px solid #cedcd9;
+}
+
+/* ESTADO OCULTO (Exatamente igual ao print) */
+.list_item_info_text {
+  display: none;
+  width: 240px;
+  background: #1F2A3B;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 99999;
+  box-shadow: 0 24px 41px rgba(0,0,0,.1), 0 9px 22px rgba(0,0,0,.06) !important;
+}
+
+/* COMPORTAMENTO DE EXIBIÇÃO (Apenas duas linhas) */
+.list_item_info {
+  position: relative; /* Garante que o balão alinhe pelo ícone */
+}
+
+.list_item_info:hover .list_item_info_text {
+  display: block;
+}
+
+
+.info-icon {
+  margin-left: 6px; /* Cria o respiro perfeito entre o texto e o botão de informação */
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+/* ========================================================================== 
+ COMPONENTES E DETALHES DA TABELA 
+ ========================================================================== */ 
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #F3F3F3;
+  color: #555555;
+  font-family: var(--font-family-text-body);
+  font-size: 14px;
+  min-width: 900px;
+}
+
+.comparison-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.feature-col {
+  text-align: left;
+  padding-left: 25px !important;
+  width: 26%;
+}
+
+.feature-name {
+  text-align: left;
+  padding-left: 25px !important;
+  color: #444444;
+}
+
+
+th.highlight-col {
+  border-top: 3px solid var(--acƟon-color) !important;
+}
+
+
+.user-row td {
+  font-weight: 600;
+  color: #205b52;
+}
+
+.setup-row td {
+  font-size: 13px;
+  font-style: italic;
+  color: #777777;
+}
+
+.btn-table-plan {
+  padding: 8px 16px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100px;
+}
+
+
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cedcd9;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+.form-group input:focus {
+  outline: none;
+  border-color: var(--action-color);
+  background-color: #fff;
+}
+
+.form-group textarea { 
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid #cedcd9; 
+  border-radius: 6px; 
+  font-size: 14px; 
+  background-color: #f9f9f9; 
+  font-family: var(--font-family-text-body);
+  resize: vertical; /* Permite ao usuário esticar apenas para baixo, se precisar */
+} 
+.form-group textarea:focus { 
+  outline: none; 
+  border-color: var(--action-color); 
+  background-color: #fff; 
+}
+

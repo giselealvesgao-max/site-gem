@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEM - Gestão em Molduras</title>
+
+    <meta name="description" content="GEM - Gestão em Molduras. O software ágil e completo para controlar estoque, emitir orçamentos rápidos e gerenciar sua loja de molduras com facilidade.">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="logo">
+                <img src="img/Logo_GEM/Color_Header.svg" alt="Logo GEM" width="200" height="55">
+            </div>
+
+            <nav class="menu" aria-label="Menu principal">
+
+                <a href="#inicio">Início</a>
+                <a href="#quem-somos">Quem Somos</a>
+                <a href="#modulos">Módulos</a>
+                <a href="#planos">Planos</a>
+                <a href= "#resultados">Resultados</a> 
+                
+            </nav>
+
+            <div class="login">
+                <a href="#" class="btn" aria-label="Acesse a área restrita da sua conta GEM">Acesse sua conta</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section id="inicio" class="banner">
+            
+            <div class="container">
+
+                <div class="conteudo">
+
+                    <div class="box-banner">
+
+                        <h1>ERP para moldurarias: um<br> sistema simples e<br> ágil de<strong> orçamento com<br> 
+                        cálculos precisos</strong></h1>
+
+                        <p>Simplifique e otimize o processo de vendas da sua loja com o ERP GEM</p>
+
+                        <div class="botoes-banner">
+
+                            <a href="https://www.youtube.com/watch?v=r_35l4xcWck" target="_blank" class="btn">Ver demonstração</a>
+                            <a href="https://wa.me/5521965459494" target="_blank" class="btn btn-banner-contato">Fale Conosco</a> 
+                    
+                        </div>
+
+                    </div>
+
+                </div>
+            
+            </div>
+
+        </section>
+
+        <section id="quem-somos" class="container apresentacao">
+
+            <div class="video-apresentacao">
+
+                <video autoplay muted loop playsinline controls>
+                        
+                    <source src="video/Entrevista_JameVillaSeca.mp4" type="video/mp4">
+                        
+                </video>
+
+            </div>
+
+            <div class="conteudo-apresentacao">
+    
+                <h2>Quem Somos</h2>
+
+                <p>Desde 2016, o <strong> GEM Gestão em Molduras</strong> transforma a forma como moldurarias
+                gerenciam seus negócios</p>
+
+                <p>Criado por especialistas com mais de 40 anos de experiência em molduraria e tecnologia, o
+                GEM nasceu para oferecer uma solução completa, precisa e feita sob medida para o setor.</p>
+
+                <p>Nosso objetivo é <strong>simplificar a gestão, reduzir desperdícios e potencializar 
+                resultados.</strong> Com um sistema ágil, intuitivo e eficaz para ajudar a sua loja a ganhar 
+                tempo, controle e lucratividade.</p>
+
+                <p>Mais do que software, somos<strong> parceiros do crescimento das moldurarias</strong> 
+                sempre evoluindo com o mercado e ouvindo nossos clientes.</p>
+                    
+            </div> 
+
+        </section>   
+
+        <section id="modulos" class="modulos">
+
+            <div class="container">
+
+                <h2>Módulos do Sistema</h2>
+
+                <p>O sistema GEM é composto por módulos que integram todas as etapas da operação de 
+                uma molduraria, oferecendo controle total do negócio em um único lugar. Clique no card para saber mais.</p>
+
+                <div class="modulos-grid">
+                    
+                    <!-- Módulo: Produtos -->
+                    <a href="link-produtos.html" class="modulos-item" data-target="modal-produtos"  aria-label="Detalhes do Módulo Produtos">
+                        <span class="icon">🏷️</span> 
+                        <h3>Produtos</h3>
+                        <p>Gestão completa de cadastro de itens, preços de custo, venda e categorias.</p>
+                    </a>
+
+                    <!-- Módulo: Estoque -->
+                    <a href="link-estoque.html" class="modulos-item" data-target="modal-estoque" aria-label="Detalhes do Módulo de Estoque">
+                        <span class="icon">📦</span>
+                        <h3>Estoque</h3>
+                        <p>Controle de inventário, entradas e saídas e alertas de mínimo.</p>
+                    </a>
+
+                    <!-- Módulo: Orçamentos & Vendas -->
+                    <a href="link-orcamentos-vendas.html" class="modulos-item" data-target="modal-vendas" aria-label="Detalhes do Módulo de Orçamentos e Vendas">
+                        <span class="icon">🛒</span>
+                        <h3>Orçamentos & Vendas</h3>
+                        <p>Gestão completa do fluxo de pedidos: do orçamento à venda efetiva.</p>
+                    </a>
+
+                    <!-- Módulo: Financeiro --> 
+                    <a href="link-financeiro.html" class="modulos-item" data-target="modal-financeiro" aria-label="Detalhes do Módulo Financeiro">
+                        <span class="icon">💰</span>
+                        <h3>Financeiro</h3>
+                        <p>Controle de contas a pagar, receber, DRE e fluxo de caixa.</p>
+                    </a>
+
+                    <!-- Módulo: Dashboard & Relatórios -->
+                    <a href="link-dashboard-relatorios.html" class="modulos-item" data-target="modal-dashboard" aria-label="Detalhes do Módulo de Dashboard e Relatórios">
+                        <span class="icon">📋</span>
+                        <h3>Dashboard & Relatórios</h3>
+                        <p>Visão gerencial de pedidos por status, itens mais vendidos e desempenho das vendas.</p>
+                    </a>
+                    
+                    <!-- Módulo: Caixa -->
+                    <a href="link-caixa.html" class="modulos-item" data-target="modal-caixa" aria-label="Detalhes do Módulo de Caixa">
+                        <span class="icon">🏪</span>
+                        <h3>Caixa</h3>
+                        <p>Gestão completa de frente de loja, abertura, fechamento e sangrias.</p>
+                    </a>
+
+                    <!-- Módulo: Multiloja -->
+                    <a href="link-multiloja.html" class="modulos-item" data-target="modal-multiloja" aria-label="Detalhes do Módulo Multiloja">
+                        <span class="icon">🛍️</span>
+                        <h3>Multiloja</h3>
+                        <p>Gerenciamento centralizado de várias filiais, estoque compartilhado.</p>
+                    </a>
+
+                    <!-- Módulo: E-commerce Integrado -->
+                    <a href="link-ecommerce.html" class="modulos-item" data-target="modal-ecommerce" aria-label="Detalhes do Módulo de E-commerce Integrado">
+                        <span class="icon">🌐</span>
+                        <h3>E-commerce Integrado</h3>
+                        <p>Integração da sua loja com plataforma de e-commerce parceira.</p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- MODAIS -->
+
+        <div id="modal-produtos" class="modal">
+                
+            <div class="modal-content"><span class="close-button">&times;</span>
+
+                <h2>Módulo: Produtos</h2>
+                <p><strong>Detalhes completos:</strong>Fale sobre cadastro de SKU, códigos de barra, 
+                múltiplas variações, imagens, preços de custo e venda, e integração com balanças.</p>
+
+            </div>
+        </div>
+
+        <div id="modal-estoque" class="modal">
+
+            <div class="modal-content"><span class="close-button">&times;</span>
+
+                <h2>Módulo: Estoque</h2>
+                <p><strong>Detalhes completos:</strong> Gerenciamento de entradas por compra, saídas 
+                por venda, inventário e auditoria de estoque.</p>
+
+            </div>
+        </div>
+
+        <div id="modal-vendas" class="modal">
+                
+            <div class="modal-content"><span class="close-button">&times;</span>
+                    
+                <h2>Módulo: Orçamentos & Vendas</h2>
+                <p><strong>Detalhes completos:</strong> Gestão de pedidos por status (proposta, execução) 
+                e confirmação de venda mediante pagamento, com filtros avançados de pesquisa.</p>
+                
+            </div>
+        </div>
+
+        <div id="modal-financeiro" class="modal">
+                
+            <div class="modal-content"><span class="close-button">&times;</span>
+                    
+                <h2>Módulo: Financeiro</h2>
+                <p><strong>Detalhes completos:</strong> Controle completo de contas a pagar e receber, 
+                DRE gerencial, extrato de contas internas, transferências e painel de débitos e créditos.</p>
+                
+            </div>
+        </div>
+
+        <div id="modal-dashboard" class="modal">
+                
+            <div class="modal-content"><span class="close-button">&times;</span>
+                    
+                <h2>Módulo: Dashboard & Relatórios</h2>
+                <p><strong>Detalhes completos:</strong> Visão gerencial de pedidos abertos, itens mais 
+                vendidos e relatórios detalhados de desempenho.</p>
+                
+            </div>
+        </div>
+
+        <div id="modal-caixa" class="modal">
+                
+            <div class="modal-content"><span class="close-button">&times;</span>
+                    
+                <h2>Módulo: Caixa</h2>
+                <p><strong>Detalhes completos:</strong> Gestão completa de frente de loja, incluindo 
+                abertura, fechamento, sangrias e suprimentos.</p>
+                
+            </div>
+        </div>
+
+        <div id="modal-multiloja" class="modal">
+                
+            <div class="modal-content"><span class="close-button">&times;</span>
+                    
+                <h2>Módulo: Multiloja</h2>
+                <p><strong>Detalhes completos:</strong> Gerenciamento centralizado de várias filiais 
+                a partir de uma única interface, com estoque e vendas unificados.</p>
+                
+            </div>
+        </div>
+
+        <div id="modal-ecommerce" class="modal">
+                
+            <div class="modal-content"><span class="close-button">&times;</span>
+                    
+                <h2>Módulo: E-commerce Integrado</h2>
+                <p><strong>Detalhes completos:</strong> Integração da sua loja com plataforma de e-commerce 
+                parceira, sincronizando produtos, estoque e pedidos.</p>
+                
+            </div>
+        </div>
+
+        <section id="planos" class="container planos">
+
+            <div class="conteudo-planos">
+                
+                <h2>Confira os planos que o GEM oferece:</h2>
+
+                <div class="linha-travessa"></div>
+
+            </div>
+
+            <!-- <div class="planos-grid"> -->
+            <section class="pricing-table-section">
+
+                <div class="container planos-split-container">
+    
+                    <!-- Menu Lateral Esquerdo -->
+                    <aside class="pricing-nav-menu">
+                        <a href="#cat-base" class="nav-item active">Usuários e armazenamento</a>
+                        <a href="#cat-atendimento" class="nav-item">Atendimento</a>
+                        <a href="#cat-produto" class="nav-item">Gestão de Produtos</a>
+                        <a href="#cat-estoque" class="nav-item">Gestão de Estoque</a>
+                        <a href="#cat-vendas" class="nav-item">Gestão de Vendas</a>
+                        <a href="#cat-notas" class="nav-item">Notas Fiscais</a>
+                        <a href="#cat-financeiro" class="nav-item">Gestão Financeira</a>
+                        <a href="#cat-relatorio" class="nav-item">Gestão de Relatórios</a>
+
+                        <div class="menu-arrow"></div>
+                    </aside>
+
+                    <!-- Área da Tabela com Rolagem Vertical Interna -->
+    
+                    <div class="table-scroll-container">
+                            
+                        <table class="comparison-table">
+                                
+                            <thead>
+                                <tr>
+                                    <th class="feature-col">Recursos do Sistema</th>
+                                    <th>Plus</th>
+                                    <th>Plus com Elevação</th>
+                                    <th>Manager</th>
+                                    <th>Reporter</th>
+                                    <th>Extended</th>
+                                </tr>
+                            </thead>
+                
+                         <!-- CATEGORIA 1: USUÁRIOS E ARMAZENAMENTO -->
+                            <tbody id="cat-base">
+
+                                <tr class="category-header-row">
+                                    <td colspan="7">Usuários e armazenamento</td>
+                                </tr>
+                                    <tr class="user-row">
+                                        <td class="feature-name">Limite de Usuários
+
+                                            <span class="list_item_info">
+                                            
+                                        <svg xmlns="http://w3.org" width="18" height="18" viewBox="0 0 24 24" fill="#a2f1e1" stroke="#a2f1e1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <!-- Alterada a cor para #ffffff nas duas linhas que formam a letra i -->
+                                        <line x1="12" y1="16" x2="12" y2="12" stroke="#ffffff" stroke-width="3.5"></line>
+                                        <line x1="12" y1="8" x2="12.01" y2="8" stroke="#ffffff" stroke-width="3.5"></line>
+                                        </svg>
+
+                                        
+                                            <span class="list_item_info_text">
+                                                Por CNPJ.
+                                            </span>
+                                        </span>
+                                        </td>
+                                        <td>3 usuários</td>
+                                        <td>3 usuários</td>
+                                        <td>6 usuários</td>
+                                        <td>6 usuários</td>
+                                        <td>8 usuários</td>
+                                    </tr>
+
+                                <tr class="user-row">
+                                    <td class="feature-name">Espaço de armazenamento de dados
+
+                                        <span class="list_item_info">
+                                            
+                                        <svg xmlns="http://w3.org" width="18" height="18" viewBox="0 0 24 24" fill="#a2f1e1" stroke="#a2f1e1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <!-- Alterada a cor para #ffffff nas duas linhas que formam a letra i -->
+                                        <line x1="12" y1="16" x2="12" y2="12" stroke="#ffffff" stroke-width="3.5"></line>
+                                        <line x1="12" y1="8" x2="12.01" y2="8" stroke="#ffffff" stroke-width="3.5"></line>
+                                        </svg>
+
+                                        
+                                            <span class="list_item_info_text">
+                                                 Espaço de armazenamento dedicado ao cadastro de 
+                                                 produtos, clientes e fornecedores, vendas, contas, 
+                                                 ordens de serviço, movimentações de estoque, entre 
+                                                 outros.
+                                            </span>
+                                        </span>
+                                    </td>
+                                    <td>250 MB</td>
+                                    <td>250 MB</td>
+                                    <td>500 MB</td>
+                                    <td>500 MB</td>
+                                    <td>750 MB</td>
+                                </tr>
+                            </tbody>
+
+                         <!-- CATEGORIA 2: ATENDIMENTO -->
+
+                            <tbody id="cat-atendimento">
+                            
+                                <tr class="category-header-row">
+                                    <td colspan="7">Atendimento</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Tutoriais
+
+                                        <span class="list_item_info">
+                                            
+                                            <svg xmlns="http://w3.org" width="18" height="18" viewBox="0 0 24 24" fill="#a2f1e1" stroke="#a2f1e1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <!-- Alterada a cor para #ffffff nas duas linhas que formam a letra i -->
+                                                <line x1="12" y1="16" x2="12" y2="12" stroke="#ffffff" stroke-width="3.5"></line>
+                                                <line x1="12" y1="8" x2="12.01" y2="8" stroke="#ffffff" stroke-width="3.5"></line>
+                                            </svg>
+
+                                        
+                                            <span class="list_item_info_text">
+                                                Tutoriais exclusivos para clientes no YouTube.
+                                            </span>
+                                        </span>
+                                    </td>
+                                        <td>✓</td>
+                                        <td>✓</td>
+                                        <td>✓</td>
+                                        <td>✓</td>
+                                        <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Suporte via telefone</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Suporte via chat</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Suporte via e-mail</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                            </tbody>
+
+                         <!-- CATEGORIA 4: GESTÃO DE PRODUTOS -->
+
+                            <tbody id="cat-produtos">
+                            
+                                <tr class="category-header-row">
+                                    <td colspan="7">Gestão de Produtos</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Cadastro de produtos com variações e composições</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Cadastro de produtos manual</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Castro de produtos por planilha</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Cadastro de produtos por xml</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                            
+                            </tbody>
+
+
+                         <!-- CATEGORIA 5: GESTÃO DE ESTOQUE -->
+
+                            <tbody id="cat-estoque">
+                            
+                                <tr class="category-header-row">
+                                    <td colspan="7">Gestão de Estoque</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Cadastro de estoque manual</td>
+                                        <td>✓</td>
+                                        <td>✓</td>
+                                        <td>✓</td>
+                                        <td>✓</td>
+                                        <td>✓</td>
+                                    </tr>
+
+                                <tr>
+                                    <td class="feature-name">Cadastro de estoque por planilha</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Cadastro de estoque por xml</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Controle completo do estoque</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                            </tbody>
+
+                         <!-- CATEGORIA 6: GESTÃO DE VENDAS -->
+
+                            <tbody id="cat-vendas">
+                            
+                                <tr class="category-header-row">
+                                    <td colspan="7">Gestão de Vendas</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Controle de vendas</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Pedidos e orçamentos
+                                        
+                                        <span class="list_item_info">
+                                            
+                                            <svg xmlns="http://w3.org" width="18" height="18" viewBox="0 0 24 24" fill="#a2f1e1" stroke="#a2f1e1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <!-- Alterada a cor para #ffffff nas duas linhas que formam a letra i -->
+                                                <line x1="12" y1="16" x2="12" y2="12" stroke="#ffffff" stroke-width="3.5"></line>
+                                                <line x1="12" y1="8" x2="12.01" y2="8" stroke="#ffffff" stroke-width="3.5"></line>
+                                            </svg>
+
+                                        
+                                            <span class="list_item_info_text">
+                                                Itens inclusos no cálculo do orçamento:<br>
+                                                <br>
+                                                Plano Plus: Moldura, Passe-Partout, Vidro/Espelho/Acrílico, 
+                                                Base, Sarrafo e Mão de Obra.<br>
+                                                <br>
+                                                Planos superiores ao Plus: Incluem todos os itens do 
+                                                Plus, além de Substrato, Acessórios e Embalagens. 
+                                            </span>
+                                        </span>
+                                        
+                                    </td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Cadastro de vendedores</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Cadastro de parceiros</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="feature-name">Cadastro de Comissões</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="feature-name">Visualização do plano de corte </td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Cobrança de Sobras</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Aplicação de Sobrepreço
+
+                                        <span class="list_item_info">
+                                            
+                                            <svg xmlns="http://w3.org" width="18" height="18" viewBox="0 0 24 24" fill="#a2f1e1" stroke="#a2f1e1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <!-- Alterada a cor para #ffffff nas duas linhas que formam a letra i -->
+                                                <line x1="12" y1="16" x2="12" y2="12" stroke="#ffffff" stroke-width="3.5"></line>
+                                                <line x1="12" y1="8" x2="12.01" y2="8" stroke="#ffffff" stroke-width="3.5"></line>
+                                            </svg>
+
+                                        
+                                            <span class="list_item_info_text">
+                                                Permite embutir um valor ou percentual extra direto ao 
+                                                ao valor do pedido de forma automática, antes de gerar o orçamento 
+                                                para o cliente.
+                                            </span>
+                                        </span>
+
+                                        
+                                    </td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Impressão orçamentos (via cliente e oficina)</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                            </tbody>    
+                
+                         <!-- CATEGORIA 7: NOTAS FISCAIS -->
+                            <tbody id="cat-notas">
+
+                            <tr class="category-header-row">
+                                <td colspan="7">Notas Fiscais</td>
+                            </tr>
+                            
+                                <tr>
+                                    <td class="feature-name">Emissão de Nota Fiscal<br> 
+                                        de Consumidor Eletrônica<br> (NFC-e)
+                                    
+                                        <span class="list_item_info">
+                                            
+                                            <svg xmlns="http://w3.org" width="18" height="18" viewBox="0 0 24 24" fill="#a2f1e1" stroke="#a2f1e1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <!-- Alterada a cor para #ffffff nas duas linhas que formam a letra i -->
+                                                <line x1="12" y1="16" x2="12" y2="12" stroke="#ffffff" stroke-width="3.5"></line>
+                                                <line x1="12" y1="8" x2="12.01" y2="8" stroke="#ffffff" stroke-width="3.5"></line>
+                                            </svg>
+
+                                        
+                                            <span class="list_item_info_text">
+                                                Necessário certificado digital CNPJ A1 ou A3.<br>
+                                                <br>Emissão de até 100 Notas Fiscais/mês em qualquer 
+                                                modelo. Notas excedentes a quantidade 
+                                                permitida no pacote, será cobrado um acréscimo.
+                                            </span>
+                                        </span>
+
+                                    </td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Emissão de Nota Fiscal Eletrônica (NF-e)
+
+                                         <span class="list_item_info">
+                                            
+                                            <svg xmlns="http://w3.org" width="18" height="18" viewBox="0 0 24 24" fill="#a2f1e1" stroke="#a2f1e1" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <!-- Alterada a cor para #ffffff nas duas linhas que formam a letra i -->
+                                                <line x1="12" y1="16" x2="12" y2="12" stroke="#ffffff" stroke-width="3.5"></line>
+                                                <line x1="12" y1="8" x2="12.01" y2="8" stroke="#ffffff" stroke-width="3.5"></line>
+                                            </svg>
+
+                                        
+                                            <span class="list_item_info_text">
+                                                Necessário certificado digital CNPJ A1 ou A3.<br>
+                                                <br>Emissão de até 100 Notas Fiscais/mês em qualquer 
+                                                modelo. Notas excedentes a quantidade 
+                                                permitida no pacote, será cobrado um acréscimo.
+                                            </span>
+                                        </span>
+
+                                    </td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                </tr>
+                            
+                            </tbody>
+
+                         <!-- CATEGORIA 8: GESTÃO FINANCEIRA-->
+                            <tbody id="cat-financeiro">
+
+                                <tr class="category-header-row">
+                                    <td colspan="7">Gestão Financeira</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="feature-name">Controle de contas a pagar e receber</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Extrato de conta bancária</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Painel de débito e crédito</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">DRE Gerencial</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Fluxo de Caixa</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="feature-name">Transferência entre contas internas</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                            
+                            </tbody>
+
+                         <!-- CATEGORIA 9: GESTÃO DE RELATÓRIOS -->
+                            <tbody id="cat-relatorio">
+
+                                <tr class="category-header-row">
+                                    <td colspan="7">Gestão de Relatórios</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Comissões</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Custo de estoque</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="feature-name">Estoque de produto</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="feature-name">Emissão de NF</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                
+                                <tr>
+                                    <td class="feature-name">Vendas sumário e analítico</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+
+                                <tr class="setup-row">
+                                    <td class="feature-name">Taxa de Setup e Cancelamento</td>
+                                    <td>Isento</td>
+                                    <td>Isento</td>
+                                    <td>Isento</td>
+                                    <td>Isento</td>
+                                    <td>Isento</td>
+                                </tr>
+                                
+                            </tbody>
+
+                         <!-- RODAPÉ DA TABELA TRAVADO NA BASE (FICA FIXO ENQUANTO ROLA) -->
+                         <tfoot>
+                            <tr class="action-row"> 
+                                <td class="feature-col"></td> 
+                                <td><a href="#modal-cotar" class="btn btn-table-plan open-cotar-modal" data-plano="Plus">Cotar</a></td>
+                                <td><a href="#modal-cotar" class="btn btn-table-plan open-cotar-modal" data-plano="Plus com Elevação">Cotar</a></td>
+                                <td><a href="#modal-cotar" class="btn btn-table-plan open-cotar-modal" data-plano="Manager">Cotar</a></td>
+                                <td><a href="#modal-cotar" class="btn btn-table-plan open-cotar-modal" data-plano="Reporter">Cotar</a></td>
+                                <td><a href="#modal-cotar" class="btn btn-table-plan open-cotar-modal" data-plano="Extended">Cotar</a></td>
+                            </tr> 
+                            </tfoot>
+
+
+                        </table>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- MODAL DE COTAÇÃO PROTEGIDO -->
+            <div id="modal-cotar" class="modal"> 
+
+                <div class="modal-content">
+
+                    <span class="close-button">&times;</span>
+                    <h2>Solicitar Cotação</h2> 
+                    <p>Preencha os dados da sua empresa para receber a proposta personalizada.</p>
+                    
+                    <form id="form-cotar" action="#" method="POST">
+                    <!-- Campo oculto para salvar o plano que o cliente escolheu -->
+                    <input type="hidden" id="input-plano-selecionado" name="plano_interesse">
+                    
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail Corporativo:</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp / Telefone:</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(00) 00000-0000">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cnpj">CNPJ da Empresa:</label>
+                        <input type="text" id="cnpj" name="cnpj" required placeholder="00.000.000/0001-00" maxlength="18">
+                        <span id="cnpj-erro" style="color: #ff6b6b; font-size: 12px; display: none;">CNPJ inválido ou não encontrado.</span>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem / Observações adicionais (Opcional):</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Conte mais sobre o que sua molduraria precisa ou tire suas dúvidas..." rows="3"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%; margin-top: 15px;">Enviar Pedido de Cotação</button>
+                    </form>
+                </div> 
+            </div> 
+
+
+            <div class="contato">
+
+                <a href="https://wa.me/5521965459494" target="_blank" class="btn btn-planos-contato">Fale Conosco</a> 
+            </div>
+        
+        </section>
+
+        <section id="resultados" class="numeros-gem">
+
+            <div class="container">
+
+                <h2 class="titulo-numeros">Confiança que se traduz em resultados</h2>
+
+                <div class="resultados-numericos">
+
+                    <div class="numero-item">
+
+                        <div class="linha-numero">
+                            <span class="mais">+</span>
+                            <span class="contador" data-target="10">0</span>
+                            <span class="sufixo"> anos</span>
+                        </div>
+
+                        <p>atuando no mercado</p>
+                    </div>
+
+                    <div class="numero-item">
+
+                        <div class="linha-numero">
+                            <span class="mais">+</span>
+                            <span class="contador" data-target="50">0</span>
+                            
+                        </div>
+
+                        <p>clientes ativos e satisfeitos</p>
+                        
+                    </div>
+
+                
+                    <div class="numero-item">
+                        
+                        <div class="linha-numero">
+                            <span class="mais">+</span>
+                            <span class="contador" data-target="10">0</span>
+                        
+                        </div>
+
+                        <p>estados com clientes GEM</p>
+                    </div>
+            
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="faq">
+
+                <div class="container faq">
+
+                    <h2>Dúvidas Frequentes</h2>
+
+                    <div class="linha-faq"></div>
+
+                    <div class="faq-grid">
+
+                        <div class="faq-item">
+                            <h3>O que o sistema GEM faz?</h3>
+
+                            <div class="faq-text collapsed">
+                                <p>O GEM é um sistema de gestão e orçamento para moldurarias que automatiza cálculos com rapidez e precisão.</p>
+
+                                <ul>
+                                    <li>Cadastro de molduras, fornecedores e insumos</li>
+                                    <li>Definição de margens de lucratividade</li>
+                                    <li>Geração de múltiplos orçamentos</li>
+                                    <li>Plano de corte com aproveitamento</li>
+                                    <li>Análise de custos</li>
+                                </ul>
+                            </div>
+
+                            <button class="faq-toggle">Ver mais</button>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Como posso testar o sistema GEM?</h3>
+
+                            <div class="faq-text collapsed">
+                                <p>O GEM não possui versão de teste. Para conhecer o sistema, basta entrar em contato 
+                                e agendar uma demonstração.</p>
+                            </div>
+
+                            <button class="faq-toggle">Ver mais</button>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Preciso instalar o sistema no computador?</h3>
+
+                            <div class="faq-text collapsed">
+                                <p>Não. O sistema é online e funciona na nuvem, permitindo acesso de qualquer 
+                                computador com segurança. Seus dados ficam protegidos e não são perdidos, sendo 
+                                necessário apenas uma conexão com a internet.</p>
+                            </div>
+
+                            <button class="faq-toggle">Ver mais</button>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>O GEM oferece suporte?</h3>
+
+                            <div class="faq-text collapsed">
+                                <p>Sim. Oferecemos suporte durante o horário comercial para ajudar em dúvidas ou 
+                                dificuldades no uso do sistema. Também é possível agendar atendimentos, garantindo 
+                                um suporte mais personalizado quando necessário.</p>
+                            </div>
+
+                            <button class="faq-toggle">Ver mais</button>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Como funciona o cadastro de produtos?</h3>
+
+                            <div class="faq-text collapsed">
+                                <p>O GEM já disponibiliza um banco de dados com insumos de diversos fornecedores 
+                                para você selecionar o que utiliza em sua loja. 
+                                Além disso, é possível cadastrar novos produtos manualmente, por planilha ou 
+                                importando o XML da nota fiscal.</p>
+                                
+                            </div>
+
+                            <button class="faq-toggle">Ver mais</button>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Quantos usuários podem utilizar o sistema?</h3>
+
+                            <div class="faq-text collapsed">
+                                <p>Cada plano possui um limite específico para cadastro de usuários. Dentro desse 
+                                limite, todos podem utilizar o sistema simultaneamente.</p>
+                            </div>
+
+                            <button class="faq-toggle">Ver mais</button>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>O sistema garante precisão nos cálculos?</h3>
+
+                            <div class="faq-text collapsed">
+                                <p>O sistema realiza automaticamente os cálculos, considerando corretamente medidas 
+                                em metro linear e metro quadrado, além de perdas e margens. 
+                                A precisão, no entanto, depende da exatidão dos dados cadastrados (como dimensões e 
+                                parâmetros de cada produto).</p>
+                            </div>
+
+                            <button class="faq-toggle">Ver mais</button>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>Posso incluir várias molduras no mesmo orçamento?</h3>
+
+                            <div class="faq-text collapsed">
+                                <p>É possível inserir e reorganizar quantas molduras forem necessárias no mesmo 
+                                orçamento. O GEM recalcula automaticamente as medidas finais, somando as larguras de
+                                cada moldura e demais componentes (como passe-partout, sarrafos e frisos) à medida 
+                                original da peça.</p>
+                            </div>
+
+                            <button class="faq-toggle">Ver mais</button>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>É possível incluir viés no orçamento?</h3>
+
+                            <div class="faq-text collapsed">
+                                <p>Sim. O sistema permite incluir viés e, para isso, disponibiliza medidas 
+                                pré-cadastradas entre 2 mm e 5 mm, podendo ser aplicado tanto no meio do quadro
+                                quanto na extremidade (final) do passe-partout.</p>
+
+                                <p>Além disso, também é possível calcular frisos de moldura, inclusive quando 
+                                inseridos internamente ao passe-partout, mesmo em áreas onde há sobreposição do vidro.</p>
+                                
+                            </div>
+
+                            <button class="faq-toggle">Ver mais</button>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>É possível calcular sarrafo de reforço?</h3>
+
+                            <div class="faq-text collapsed">
+                                <p>Sim. O sistema permite calcular o sarrafo de reforço em todo o perímetro da moldura,
+                                além de possibilitar a inclusão de reforços horizontais e verticais com apenas um 
+                                clique.</p>
+
+                            </div>
+
+                            <button class="faq-toggle">Ver mais</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <!-- Coluna 1 -->
+            <div class="footer-col">
+
+                <div class="logo">
+                        <img src="img/Logo_GEM/Branco_Footer.svg" alt="logo GEM" width="146" height="44">
+                </div>
+
+                <p>O GEM é um sistema on-line desenvolvido exclusivamente para o segmento de moldurarias.<br>
+                Nosso objetivo é trazer mais praticidade, agilidade e segurança no cálculo dos orçamentos para
+                os lojistas.<br> Simplifique sua rotina com um sistema de Gestão e orçamentos on-line, ideal 
+                para micro, pequenas e grandes empresas.</p>
+
+            
+            </div>
+
+            <!-- Coluna 2 -->
+            <div class="footer-col">
+
+                <h4>Endereço</h4>
+
+                <p>
+                    Rua Aroazes, 230 / 802<br>
+                    Barra Olímpica - Rio de Janeiro/RJ<br>
+                    CEP: 22775-060
+                </p>
+
+                <h4 class="empresa">Empresa</h4>
+
+                <p>
+                    Gem Gestão em Molduras Ltda.<br>CNPJ: 38.386.759/0001-27
+                </p>
+            </div>
+
+            <!-- Coluna 3 -->
+            <div class="footer-col">
+                <h4>Contato</h4>
+
+                <!-- Telefones com links clicáveis para discagem direta -->
+                <div class="contato-cel">
+                    <p><a href="tel:21965459494" target="_blank">(21) 96545-9494</a></p>
+                    <p><a href="tel:21992583325" target="_blank">(21) 99258-3325</a></p>
+                    <p><a href="tel:21981692576" target="_blank">(21) 98169-2576</a></p>
+                </div>
+
+                <!-- Link do Gmail Web limpo e sem quebras de linha extras -->
+                <div class="contato-email">
+
+                    <a href="https://mail.google.com/mail/?view=cm&to=contato@gestaoemmolduras.com.br" 
+                    target="_blank">contato@gestaoemmolduras.com.br
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coluna 4 -->
+            <div class="footer-col social-col">
+
+
+                <p class="social-text">Acesse nossas redes sociais:</p>
+
+                <div class="icon-social">
+
+                    <a href="https://wa.me/5521965459494" target="_blank">
+                    <img src="img/IconesSocial/Whatsapp.svg" alt="WhatsApp" width="30" height="29">
+                    </a>
+
+                    <a href="https://www.instagram.com/gemgestaoemmolduras/" target="_blank" width="30" height="29">
+                    <img src="img/IconesSocial/instagram.svg" alt="Instagram">
+                    </a>
+
+                    <a href="https://www.youtube.com/@gemgestaoemmolduras825" target="_blank" width="30" height="29">
+                    <img src="img/IconesSocial/youtube.svg" alt="YouTube">
+                    </a>
+                </div>
+
+                <div class="termo">
+    
+                    <p class="mx-auto text-content-p3 mt-4 text-center px-10">
+                        © 2026 Direitos Reservados - 
+                        <a href="/termo-de-uso">Termos de Uso</a> - 
+                        <a href="/politica-de-privacidade">Política de Privacidade</a>.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- CDN DO SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+
+    <script src="js/menu-active-section.js"></script>
+
+    <script src="js/modal.js"></script>
+
+    <script src="js/swiper-hover-pause.js"></script>
+
+    <script src="js/planos-accordion.js"></script>
+
+    <script src="js/contador.js"></script>
+
+    <script src="js/carrosselClientes.js"></script>
+
+    <script src="js/faq.js"></script>
+
+    <script src="js/menu-mobile.js"></script>
+
+    <script src="js/menu-nav.js"></script>
+
+    <script src="js/valida-cnpj.js"></script>
+
+
+</body>
+
+</html>
